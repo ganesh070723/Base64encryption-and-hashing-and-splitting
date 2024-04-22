@@ -1,0 +1,129 @@
+<!-- login.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10+Charted&display=swap" rel="stylesheet">
+    <style>
+        .box{
+        box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+        width:300px;
+        height:200px;
+
+        }
+
+        .intro{
+        position:relative;
+        top:20vh;
+        text-align:center;
+        font-family: "Jersey 10 Charted", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+
+        }
+          table {
+    margin-left: auto;
+    margin-right: auto;
+    border-collapse: separate;
+    border-spacing: 15px;
+    text-align:center;
+  }
+
+        .table{
+        position:relative;
+        top:25vh;
+
+        text-align:centre;
+        background-color:powderblue;
+        }
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">BHS7</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="logout/">Logout</a>
+        </li>
+<!--        <li class="nav-item dropdown">-->
+<!--          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">-->
+<!--            Dropdown-->
+<!--          </a>-->
+<!--          <ul class="dropdown-menu">-->
+<!--            <li><a class="dropdown-item" href="#">Action</a></li>-->
+<!--            <li><a class="dropdown-item" href="#">Another action</a></li>-->
+<!--            <li><hr class="dropdown-divider"></li>-->
+<!--            <li><a class="dropdown-item" href="#">Something else here</a></li>-->
+<!--          </ul>-->
+<!--        </li>-->
+<!--        <li class="nav-item">-->
+<!--          <a class="nav-link disabled" aria-disabled="true">Disabled</a>-->
+<!--        </li>-->
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<div class="intro">
+<h1>
+    Hi, We are developing new Image encryption scheme <br> that will encrypt your images using <br> Base64, hashing and splitting !
+</h1>
+<p>
+    So, why are you waiting ? try it out 👀
+</p>
+    </div>
+<div class="table">
+
+
+<table>
+    <tr>
+        <td>
+            <div class="box">
+             <h3>Encrypt</h3>
+                <p>By encrypting your pictures <br> and saving it or <br> secretly send it to anyone securely</p>
+                <a href="upload/"><button type="button" class="btn btn-success">Go</button></a>
+            </div>
+        </td>
+                <td>
+            <div class="box">
+             <h3>Decryption by ID</h3>
+                <p>We simplified your <br> decryption process by entering <br> your image id, it automatically
+                    <br>decrypt your image</p>
+                <a href="decryptbyid/"><button type="button" class="btn btn-secondary">Decrypt by ID</button></a>
+            </div>
+        </td>
+                <td>
+            <div class="box">
+              <h3>
+                  Manual Decryption
+              </h3>
+                <p>
+                    We also given you a option to decrypt any image you want by entering the encrypted data into 2 intputs from 2 different files
+                </p>
+                <a href="manual-decryption/"><button type="button" class="btn btn-warning">Manual Decryption</button></a>
+            </div>
+        </td>
+    </tr>
+</table>
+</div>
+</body>
+</html>
